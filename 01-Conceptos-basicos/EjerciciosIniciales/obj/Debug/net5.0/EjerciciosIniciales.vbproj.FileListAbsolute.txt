@@ -1,0 +1,16 @@
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\EjerciciosIniciales.vbproj.AssemblyReference.cache
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\EjerciciosIniciales.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\EjerciciosIniciales.AssemblyInfoInputs.cache
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\EjerciciosIniciales.AssemblyInfo.vb
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\EjerciciosIniciales.vbproj.CoreCompileInputs.cache
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\bin\Debug\net5.0\EjerciciosIniciales.exe
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\bin\Debug\net5.0\EjerciciosIniciales.deps.json
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\bin\Debug\net5.0\EjerciciosIniciales.runtimeconfig.json
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\bin\Debug\net5.0\EjerciciosIniciales.runtimeconfig.dev.json
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\bin\Debug\net5.0\EjerciciosIniciales.dll
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\bin\Debug\net5.0\ref\EjerciciosIniciales.dll
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\bin\Debug\net5.0\EjerciciosIniciales.pdb
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\EjerciciosIniciales.dll
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\ref\EjerciciosIniciales.dll
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\EjerciciosIniciales.pdb
+C:\Users\Ibaiscanbit\source\repos\EjerciciosIniciales\EjerciciosIniciales\obj\Debug\net5.0\EjerciciosIniciales.genruntimeconfig.cache
