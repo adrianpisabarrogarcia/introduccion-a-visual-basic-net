@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\EjerciciosIniciales.vbproj": {}
+    "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\Ej2\\Ej2\\Ej2.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\EjerciciosIniciales.vbproj": {
+    "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\Ej2\\Ej2\\Ej2.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\EjerciciosIniciales.vbproj",
-        "projectName": "EjerciciosIniciales",
-        "projectPath": "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\EjerciciosIniciales.vbproj",
+        "projectUniqueName": "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\Ej2\\Ej2\\Ej2.vbproj",
+        "projectName": "Ej2",
+        "projectPath": "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\Ej2\\Ej2\\Ej2.vbproj",
         "packagesPath": "C:\\Users\\Ibaiscanbit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\obj\\",
+        "outputPath": "C:\\Users\\Ibaiscanbit\\source\\repos\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\Ej2\\Ej2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ibaiscanbit\\AppData\\Roaming\\NuGet\\NuGet.Config",
