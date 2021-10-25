@@ -1,0 +1,16 @@
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\bin\Debug\net5.0\Ej3.exe
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\bin\Debug\net5.0\Ej3.deps.json
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\bin\Debug\net5.0\Ej3.runtimeconfig.json
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\bin\Debug\net5.0\Ej3.runtimeconfig.dev.json
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\bin\Debug\net5.0\Ej3.dll
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\bin\Debug\net5.0\ref\Ej3.dll
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\bin\Debug\net5.0\Ej3.pdb
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\Ej3.vbproj.AssemblyReference.cache
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\Ej3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\Ej3.AssemblyInfoInputs.cache
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\Ej3.AssemblyInfo.vb
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\Ej3.vbproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\Ej3.dll
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\ref\Ej3.dll
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\Ej3.pdb
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\01-Conceptos-basicos\Ej3\Ej3\obj\Debug\net5.0\Ej3.genruntimeconfig.cache
