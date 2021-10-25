@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\EjerciciosIniciales.vbproj": {}
+    "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej1\\Ej1\\Ej1.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\EjerciciosIniciales.vbproj": {
+    "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej1\\Ej1\\Ej1.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\EjerciciosIniciales.vbproj",
-        "projectName": "EjerciciosIniciales",
-        "projectPath": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\EjerciciosIniciales.vbproj",
+        "projectUniqueName": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej1\\Ej1\\Ej1.vbproj",
+        "projectName": "Ej1",
+        "projectPath": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej1\\Ej1\\Ej1.vbproj",
         "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\EjerciciosIniciales\\obj\\",
+        "outputPath": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej1\\Ej1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",

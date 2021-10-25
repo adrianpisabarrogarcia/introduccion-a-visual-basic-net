@@ -1,0 +1,16 @@
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\bin\Debug\net5.0\01Ej.exe
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\bin\Debug\net5.0\01Ej.deps.json
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\bin\Debug\net5.0\01Ej.runtimeconfig.json
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\bin\Debug\net5.0\01Ej.runtimeconfig.dev.json
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\bin\Debug\net5.0\01Ej.dll
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\bin\Debug\net5.0\ref\01Ej.dll
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\bin\Debug\net5.0\01Ej.pdb
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\01Ej.vbproj.AssemblyReference.cache
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\01Ej.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\01Ej.AssemblyInfoInputs.cache
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\01Ej.AssemblyInfo.vb
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\01Ej.vbproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\01Ej.dll
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\ref\01Ej.dll
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\01Ej.pdb
+C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\03-Clases\01Ej\01Ej\obj\Debug\net5.0\01Ej.genruntimeconfig.cache
