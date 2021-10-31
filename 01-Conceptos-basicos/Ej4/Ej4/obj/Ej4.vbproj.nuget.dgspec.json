@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\Ej4.vbproj": {}
+    "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\Ej4.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\Ej4.vbproj": {
+    "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\Ej4.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\Ej4.vbproj",
+        "projectUniqueName": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\Ej4.vbproj",
         "projectName": "Ej4",
-        "projectPath": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\Ej4.vbproj",
-        "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\obj\\",
+        "projectPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\Ej4.vbproj",
+        "packagesPath": "C:\\Users\\apisabarro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\01-Conceptos-basicos\\Ej4\\Ej4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\apisabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
