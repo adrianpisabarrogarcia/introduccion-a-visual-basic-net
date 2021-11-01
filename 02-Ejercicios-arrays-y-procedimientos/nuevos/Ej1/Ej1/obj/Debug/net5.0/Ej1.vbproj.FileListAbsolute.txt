@@ -1,0 +1,16 @@
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\bin\Debug\net5.0\Ej1.exe
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\bin\Debug\net5.0\Ej1.deps.json
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\bin\Debug\net5.0\Ej1.runtimeconfig.json
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\bin\Debug\net5.0\Ej1.runtimeconfig.dev.json
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\bin\Debug\net5.0\Ej1.dll
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\bin\Debug\net5.0\ref\Ej1.dll
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\bin\Debug\net5.0\Ej1.pdb
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\Ej1.vbproj.AssemblyReference.cache
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\Ej1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\Ej1.AssemblyInfoInputs.cache
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\Ej1.AssemblyInfo.vb
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\Ej1.vbproj.CoreCompileInputs.cache
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\Ej1.dll
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\ref\Ej1.dll
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\Ej1.pdb
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\02-Ejercicios-arrays-y-procedimientos\nuevos\Ej1\Ej1\obj\Debug\net5.0\Ej1.genruntimeconfig.cache
