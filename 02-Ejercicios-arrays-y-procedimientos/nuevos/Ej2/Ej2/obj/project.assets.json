@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\01Ej\\01Ej\\01Ej.vbproj",
-      "projectName": "01Ej",
-      "projectPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\01Ej\\01Ej\\01Ej.vbproj",
+      "projectUniqueName": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\nuevos\\Ej2\\Ej2\\Ej2.vbproj",
+      "projectName": "Ej2",
+      "projectPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\nuevos\\Ej2\\Ej2\\Ej2.vbproj",
       "packagesPath": "C:\\Users\\apisabarro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\01Ej\\01Ej\\obj\\",
+      "outputPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\nuevos\\Ej2\\Ej2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\apisabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\01Ej\\01Ej\\01Ej.vbproj": {}
+    "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\New\\Clase\\Clase\\Clase.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\01Ej\\01Ej\\01Ej.vbproj": {
+    "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\New\\Clase\\Clase\\Clase.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\01Ej\\01Ej\\01Ej.vbproj",
-        "projectName": "01Ej",
-        "projectPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\01Ej\\01Ej\\01Ej.vbproj",
+        "projectUniqueName": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\New\\Clase\\Clase\\Clase.vbproj",
+        "projectName": "Clase",
+        "projectPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\New\\Clase\\Clase\\Clase.vbproj",
         "packagesPath": "C:\\Users\\apisabarro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\01Ej\\01Ej\\obj\\",
+        "outputPath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\New\\Clase\\Clase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\apisabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",

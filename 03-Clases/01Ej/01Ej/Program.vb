@@ -3,14 +3,12 @@ Imports System
 Module Program
     Sub Main(args As String())
         Dim opcion As Integer
-
-
         Do
-
             opcion = menu()
 
-
         Loop While opcion > 1 And opcion < 7
+
+        Console.WriteLine("Saliendo...")
 
     End Sub
 
