@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class AplicacionPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -43,28 +43,28 @@ Partial Class Form1
         Me.cSegundoApellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.clAsignaturas = New System.Windows.Forms.CheckedListBox()
         Me.bMatricular = New System.Windows.Forms.Button()
+        Me.clAsignaturas = New System.Windows.Forms.CheckedListBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.bMatematicas = New System.Windows.Forms.Button()
-        Me.tbMategmaticas = New System.Windows.Forms.TextBox()
-        Me.tbFisica = New System.Windows.Forms.TextBox()
-        Me.bFisica = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.tbQuimica = New System.Windows.Forms.TextBox()
-        Me.bQuimica = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.tbLenguaje = New System.Windows.Forms.TextBox()
-        Me.bLenguaje = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.tbBiologia = New System.Windows.Forms.TextBox()
-        Me.bBiologia = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.tbDibujo = New System.Windows.Forms.TextBox()
         Me.bDibujo = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.tbBiologia = New System.Windows.Forms.TextBox()
+        Me.bBiologia = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.tbLenguaje = New System.Windows.Forms.TextBox()
+        Me.bLenguaje = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.tbQuimica = New System.Windows.Forms.TextBox()
+        Me.bQuimica = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.tbFisica = New System.Windows.Forms.TextBox()
+        Me.bFisica = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.tbMategmaticas = New System.Windows.Forms.TextBox()
+        Me.bMatematicas = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -245,6 +245,7 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Gestionar alumnos/as:"
+        Me.GroupBox1.Visible = False
         '
         'GroupBox2
         '
@@ -259,6 +260,24 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Matricular en asignaturas a los alumnos/as:"
         '
+        'bMatricular
+        '
+        Me.bMatricular.Location = New System.Drawing.Point(372, 287)
+        Me.bMatricular.Name = "bMatricular"
+        Me.bMatricular.Size = New System.Drawing.Size(121, 29)
+        Me.bMatricular.TabIndex = 11
+        Me.bMatricular.Text = "👨‍🎓 Matricular"
+        Me.bMatricular.UseVisualStyleBackColor = True
+        '
+        'clAsignaturas
+        '
+        Me.clAsignaturas.FormattingEnabled = True
+        Me.clAsignaturas.Items.AddRange(New Object() {"Matemáticas", "Física", "Química", "Lenguaje", "Biología", "Dibujo"})
+        Me.clAsignaturas.Location = New System.Drawing.Point(62, 91)
+        Me.clAsignaturas.Name = "clAsignaturas"
+        Me.clAsignaturas.Size = New System.Drawing.Size(252, 136)
+        Me.clAsignaturas.TabIndex = 0
+        '
         'GroupBox3
         '
         Me.GroupBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -270,24 +289,6 @@ Partial Class Form1
         Me.GroupBox3.TabIndex = 14
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Introducir notas:"
-        '
-        'clAsignaturas
-        '
-        Me.clAsignaturas.FormattingEnabled = True
-        Me.clAsignaturas.Items.AddRange(New Object() {"Matemáticas", "Física", "Química", "Lenguaje", "Biología", "Dibujo"})
-        Me.clAsignaturas.Location = New System.Drawing.Point(62, 91)
-        Me.clAsignaturas.Name = "clAsignaturas"
-        Me.clAsignaturas.Size = New System.Drawing.Size(252, 136)
-        Me.clAsignaturas.TabIndex = 0
-        '
-        'bMatricular
-        '
-        Me.bMatricular.Location = New System.Drawing.Point(372, 287)
-        Me.bMatricular.Name = "bMatricular"
-        Me.bMatricular.Size = New System.Drawing.Size(121, 29)
-        Me.bMatricular.TabIndex = 11
-        Me.bMatricular.Text = "👨‍🎓 Matricular"
-        Me.bMatricular.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -314,105 +315,30 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(486, 303)
         Me.Panel1.TabIndex = 0
         '
-        'Label4
+        'tbDibujo
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(48, 49)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(97, 20)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Matemáticas:"
+        Me.tbDibujo.Location = New System.Drawing.Point(186, 252)
+        Me.tbDibujo.Name = "tbDibujo"
+        Me.tbDibujo.Size = New System.Drawing.Size(125, 27)
+        Me.tbDibujo.TabIndex = 17
         '
-        'bMatematicas
+        'bDibujo
         '
-        Me.bMatematicas.Location = New System.Drawing.Point(348, 42)
-        Me.bMatematicas.Name = "bMatematicas"
-        Me.bMatematicas.Size = New System.Drawing.Size(94, 29)
-        Me.bMatematicas.TabIndex = 1
-        Me.bMatematicas.Text = "💾 Guardar"
-        Me.bMatematicas.UseVisualStyleBackColor = True
+        Me.bDibujo.Location = New System.Drawing.Point(348, 250)
+        Me.bDibujo.Name = "bDibujo"
+        Me.bDibujo.Size = New System.Drawing.Size(94, 29)
+        Me.bDibujo.TabIndex = 16
+        Me.bDibujo.Text = "💾 Guardar"
+        Me.bDibujo.UseVisualStyleBackColor = True
         '
-        'tbMategmaticas
+        'Label9
         '
-        Me.tbMategmaticas.Location = New System.Drawing.Point(186, 44)
-        Me.tbMategmaticas.Name = "tbMategmaticas"
-        Me.tbMategmaticas.Size = New System.Drawing.Size(125, 27)
-        Me.tbMategmaticas.TabIndex = 2
-        '
-        'tbFisica
-        '
-        Me.tbFisica.Location = New System.Drawing.Point(186, 83)
-        Me.tbFisica.Name = "tbFisica"
-        Me.tbFisica.Size = New System.Drawing.Size(125, 27)
-        Me.tbFisica.TabIndex = 5
-        '
-        'bFisica
-        '
-        Me.bFisica.Location = New System.Drawing.Point(348, 81)
-        Me.bFisica.Name = "bFisica"
-        Me.bFisica.Size = New System.Drawing.Size(94, 29)
-        Me.bFisica.TabIndex = 4
-        Me.bFisica.Text = "💾 Guardar"
-        Me.bFisica.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(48, 88)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 20)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Física:"
-        '
-        'tbQuimica
-        '
-        Me.tbQuimica.Location = New System.Drawing.Point(186, 125)
-        Me.tbQuimica.Name = "tbQuimica"
-        Me.tbQuimica.Size = New System.Drawing.Size(125, 27)
-        Me.tbQuimica.TabIndex = 8
-        '
-        'bQuimica
-        '
-        Me.bQuimica.Location = New System.Drawing.Point(348, 123)
-        Me.bQuimica.Name = "bQuimica"
-        Me.bQuimica.Size = New System.Drawing.Size(94, 29)
-        Me.bQuimica.TabIndex = 7
-        Me.bQuimica.Text = "💾 Guardar"
-        Me.bQuimica.UseVisualStyleBackColor = True
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(48, 130)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(67, 20)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Química:"
-        '
-        'tbLenguaje
-        '
-        Me.tbLenguaje.Location = New System.Drawing.Point(186, 166)
-        Me.tbLenguaje.Name = "tbLenguaje"
-        Me.tbLenguaje.Size = New System.Drawing.Size(125, 27)
-        Me.tbLenguaje.TabIndex = 11
-        '
-        'bLenguaje
-        '
-        Me.bLenguaje.Location = New System.Drawing.Point(348, 164)
-        Me.bLenguaje.Name = "bLenguaje"
-        Me.bLenguaje.Size = New System.Drawing.Size(94, 29)
-        Me.bLenguaje.TabIndex = 10
-        Me.bLenguaje.Text = "💾 Guardar"
-        Me.bLenguaje.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(48, 171)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 20)
-        Me.Label7.TabIndex = 9
-        Me.Label7.Text = "Lenguaje:"
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(48, 257)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(57, 20)
+        Me.Label9.TabIndex = 15
+        Me.Label9.Text = "Dibujo:"
         '
         'tbBiologia
         '
@@ -439,32 +365,107 @@ Partial Class Form1
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "Biología:"
         '
-        'tbDibujo
+        'tbLenguaje
         '
-        Me.tbDibujo.Location = New System.Drawing.Point(186, 252)
-        Me.tbDibujo.Name = "tbDibujo"
-        Me.tbDibujo.Size = New System.Drawing.Size(125, 27)
-        Me.tbDibujo.TabIndex = 17
+        Me.tbLenguaje.Location = New System.Drawing.Point(186, 166)
+        Me.tbLenguaje.Name = "tbLenguaje"
+        Me.tbLenguaje.Size = New System.Drawing.Size(125, 27)
+        Me.tbLenguaje.TabIndex = 11
         '
-        'bDibujo
+        'bLenguaje
         '
-        Me.bDibujo.Location = New System.Drawing.Point(348, 250)
-        Me.bDibujo.Name = "bDibujo"
-        Me.bDibujo.Size = New System.Drawing.Size(94, 29)
-        Me.bDibujo.TabIndex = 16
-        Me.bDibujo.Text = "💾 Guardar"
-        Me.bDibujo.UseVisualStyleBackColor = True
+        Me.bLenguaje.Location = New System.Drawing.Point(348, 164)
+        Me.bLenguaje.Name = "bLenguaje"
+        Me.bLenguaje.Size = New System.Drawing.Size(94, 29)
+        Me.bLenguaje.TabIndex = 10
+        Me.bLenguaje.Text = "💾 Guardar"
+        Me.bLenguaje.UseVisualStyleBackColor = True
         '
-        'Label9
+        'Label7
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(48, 257)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(57, 20)
-        Me.Label9.TabIndex = 15
-        Me.Label9.Text = "Dibujo:"
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(48, 171)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(72, 20)
+        Me.Label7.TabIndex = 9
+        Me.Label7.Text = "Lenguaje:"
         '
-        'Form1
+        'tbQuimica
+        '
+        Me.tbQuimica.Location = New System.Drawing.Point(186, 125)
+        Me.tbQuimica.Name = "tbQuimica"
+        Me.tbQuimica.Size = New System.Drawing.Size(125, 27)
+        Me.tbQuimica.TabIndex = 8
+        '
+        'bQuimica
+        '
+        Me.bQuimica.Location = New System.Drawing.Point(348, 123)
+        Me.bQuimica.Name = "bQuimica"
+        Me.bQuimica.Size = New System.Drawing.Size(94, 29)
+        Me.bQuimica.TabIndex = 7
+        Me.bQuimica.Text = "💾 Guardar"
+        Me.bQuimica.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(48, 130)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(67, 20)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "Química:"
+        '
+        'tbFisica
+        '
+        Me.tbFisica.Location = New System.Drawing.Point(186, 83)
+        Me.tbFisica.Name = "tbFisica"
+        Me.tbFisica.Size = New System.Drawing.Size(125, 27)
+        Me.tbFisica.TabIndex = 5
+        '
+        'bFisica
+        '
+        Me.bFisica.Location = New System.Drawing.Point(348, 81)
+        Me.bFisica.Name = "bFisica"
+        Me.bFisica.Size = New System.Drawing.Size(94, 29)
+        Me.bFisica.TabIndex = 4
+        Me.bFisica.Text = "💾 Guardar"
+        Me.bFisica.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(48, 88)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(48, 20)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Física:"
+        '
+        'tbMategmaticas
+        '
+        Me.tbMategmaticas.Location = New System.Drawing.Point(186, 44)
+        Me.tbMategmaticas.Name = "tbMategmaticas"
+        Me.tbMategmaticas.Size = New System.Drawing.Size(125, 27)
+        Me.tbMategmaticas.TabIndex = 2
+        '
+        'bMatematicas
+        '
+        Me.bMatematicas.Location = New System.Drawing.Point(348, 42)
+        Me.bMatematicas.Name = "bMatematicas"
+        Me.bMatematicas.Size = New System.Drawing.Size(94, 29)
+        Me.bMatematicas.TabIndex = 1
+        Me.bMatematicas.Text = "💾 Guardar"
+        Me.bMatematicas.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(48, 49)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(97, 20)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Matemáticas:"
+        '
+        'AplicacionPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -475,7 +476,7 @@ Partial Class Form1
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
+        Me.Name = "AplicacionPrincipal"
         Me.Text = "Clase 🧑‍🎓"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
