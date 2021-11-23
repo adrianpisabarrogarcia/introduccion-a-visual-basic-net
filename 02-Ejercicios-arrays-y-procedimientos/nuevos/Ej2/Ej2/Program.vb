@@ -10,20 +10,20 @@ Module Program
         End While
 
         'Creo una matriz de departamentos
-        Dim departamentos(numeroDepartamentos, 3) As Array
+        Dim departamentos(numeroDepartamentos - 1, 3) As String
 
-        For i = 1 To numeroDepartamentos
+        For i = 0 To numeroDepartamentos - 1
             'Pedir nombre de departamento
-            Dim nombreDepartamento(1) As String
+            Dim nombreDepartamento As String
             Console.WriteLine("Inserta el nombre de departamento:")
-            nombreDepartamento(1) = Console.ReadLine()
-            departamentos(i, 1) = nombreDepartamento
+            nombreDepartamento = Console.ReadLine()
+            departamentos(i, 0) = nombreDepartamento
 
             'Pedir jefe de departamento
-            Dim nombreJefeDepartamento(1) As String
+            Dim nombreJefeDepartamento As String
             Console.WriteLine("Inserta el nombre del jefe/a del departamento:")
-            nombreJefeDepartamento(1) = Console.ReadLine()
-            departamentos(i, 2) = nombreJefeDepartamento
+            nombreJefeDepartamento = Console.ReadLine()
+            departamentos(i, 1) = nombreJefeDepartamento
 
             'Pedir nombres de trabajadores/as de departamento
             Dim numeroTrabajadoresDepartamento As Integer = 1
@@ -32,11 +32,10 @@ Module Program
                 Console.WriteLine("Numero entero mayor de 0 introducido erróneo, inténtelo de nuevo")
             End While
             Dim nombresTrabajadores(numeroTrabajadoresDepartamento) As String
-            For j = 0 To numeroTrabajadoresDepartamento
+            For j = 2 To numeroTrabajadoresDepartamento
                 Console.WriteLine("Introduce el nombre del trabajador/a {0}:", j)
-                nombresTrabajadores(j) = Console.ReadLine()
+                departamentos(i, j) = Console.ReadLine()
             Next
-            departamentos(i, 3) = nombresTrabajadores
         Next
 
         imprimirDepartamentos(departamentos)
@@ -47,14 +46,15 @@ Module Program
 
     Sub imprimirDepartamentos(departamentos As Array)
 
-        For i = 0 To departamentos.Length
-            Dim nombreDepartamento As Array = departamentos(i)(0)
-            Console.WriteLine("Departamento: {0}", nombreDepartamento(0))
-            Dim jefeDepartamento As Array = departamentos(i)(2)
+        For i = 0 To (departamentos.Length - 1)
+            Dim nombreDepartamento As String = departamentos(i)(0)
+            Console.WriteLine("Departamento: {0}", nombreDepartamento)
 
-            Console.WriteLine("Jefe/a del departamento: {0}", jefeDepartamento(1))
-            For j = 1 To departamentos(i)(3).Length
-                Console.WriteLine("    {0}. Trabajador/a: {1}", j, departamentos(i)(3)(j))
+            Dim jefeDepartamento As String = departamentos(i)(1)
+            Console.WriteLine("Jefe/a del departamento: {0}", jefeDepartamento)
+
+            For j = 2 To departamentos(i).Length - 1
+                Console.WriteLine("    {0}. Trabajador/a: {1}", j, departamentos(i)(j))
             Next
         Next
 

@@ -1,0 +1,11 @@
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\bin\Debug\Combinatoria.exe.config
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\bin\Debug\Combinatoria.exe
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\bin\Debug\Combinatoria.pdb
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\bin\Debug\Combinatoria.xml
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\obj\Debug\Combinatoria.vbprojAssemblyReference.cache
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\obj\Debug\Combinatoria.Resources.resources
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\obj\Debug\Combinatoria.vbproj.GenerateResource.cache
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\obj\Debug\Combinatoria.vbproj.CoreCompileInputs.cache
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\obj\Debug\Combinatoria.exe
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\obj\Debug\Combinatoria.xml
+C:\Users\8fdiexa02\Desktop\examen\Combinatoria\Combinatoria\obj\Debug\Combinatoria.pdb

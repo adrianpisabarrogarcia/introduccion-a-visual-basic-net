@@ -40,3 +40,13 @@ C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj
 C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\ref\Clase.dll
 C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.pdb
 C:\Users\adria\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.genruntimeconfig.cache
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.vbproj.AssemblyReference.cache
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.AplicacionPrincipal.resources
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.vbproj.GenerateResource.cache
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.AssemblyInfoInputs.cache
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.AssemblyInfo.vb
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.vbproj.CoreCompileInputs.cache
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.dll
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\ref\Clase.dll
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\04-Interfaz\Clase\obj\Debug\net5.0-windows\Clase.pdb

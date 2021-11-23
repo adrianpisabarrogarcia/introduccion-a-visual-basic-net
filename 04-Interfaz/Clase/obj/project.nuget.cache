@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "kz0yl+mzW3xglbBnWvPnodI6gOZfSDOMnkLtmdKysO/ROSQw61s0q/0elm2znjQzsn0H7/le2YQTmjc2zEGazw==",
+  "dgSpecHash": "I4FtwzZy2M2KQpBLR87+WYNJNXH96oT8w/JM3b+J3viItFeOarw6CwDkcxyGe0B/yMly4Ynoyz1nezspcRQ6HQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adria\\Desktop\\Git\\introduccion-a-visual-basic-net\\04-Interfaz\\Clase\\Clase.vbproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\04-Interfaz\\Clase\\Clase.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

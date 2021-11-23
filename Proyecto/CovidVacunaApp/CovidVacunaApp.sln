@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CovidVacunaApp", "CovidVacunaApp.vbproj", "{C7AEAE26-1504-4154-837E-9EB61469DF05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7AEAE26-1504-4154-837E-9EB61469DF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AEAE26-1504-4154-837E-9EB61469DF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AEAE26-1504-4154-837E-9EB61469DF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AEAE26-1504-4154-837E-9EB61469DF05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBF905C7-830A-43AA-9BBE-C1898A3F083E}
+	EndGlobalSection
+EndGlobal

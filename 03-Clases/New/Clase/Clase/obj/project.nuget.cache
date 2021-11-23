@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "To+O+Rjxgyn2zearTXDXUHOxzpwpTnMK6abOjJVopPi3CFeEKAK/plOztvAmG/zt2S5bbBOAn4ziOcBkgAh6oQ==",
+  "dgSpecHash": "KAW88OtxBe6LKpru1S7zil/VeXY/UqRGCsY+EkKF9yWUxGaIXh3pW1lx9RKEOiDCrx+Vk0vuR2S7Rd3N7MXz5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\03-Clases\\New\\Clase\\Clase\\Clase.vbproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

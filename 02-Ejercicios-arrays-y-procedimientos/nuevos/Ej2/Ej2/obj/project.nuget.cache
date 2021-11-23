@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fovZs9121groTXF/sDId1NBQtqv6iNxuJC3R+AaD63MKYnu+hVs+z3ifEEX9nfll8kgB7sRnD00UIF+dFRN72Q==",
+  "dgSpecHash": "GZd6TLJ7PAZjKcEjoP6y9qX5u27AIW/LqdxHkEHAC5tE7vR+FDQoLzWygxJNXi69PzXxMa8bik1e+xXs4WuxUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\apisabarro\\Desktop\\Git\\introduccion-a-visual-basic-net\\02-Ejercicios-arrays-y-procedimientos\\nuevos\\Ej2\\Ej2\\Ej2.vbproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\apisabarro\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
