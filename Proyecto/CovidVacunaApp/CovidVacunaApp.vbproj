@@ -118,7 +118,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\ControladorComprobacionDatos.vb" />
     <Compile Include="Modelo\BBDD.vb" />
+    <Compile Include="Modelo\Usuario.vb" />
     <Compile Include="Vista\InicioSesion.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +144,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Vista\RegistrarUsuario.Designer.vb">
+      <DependentUpon>RegistrarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\RegistrarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -152,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\InicioSesion.resx">
       <DependentUpon>InicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistrarUsuario.resx">
+      <DependentUpon>RegistrarUsuario.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -167,8 +178,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controlador\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
