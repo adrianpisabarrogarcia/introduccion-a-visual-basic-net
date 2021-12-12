@@ -67,9 +67,7 @@ Public Class BBDD
             MessageBox.Show("Error registrando un usuario")
         End Try
 
-
         desconectar()
-
     End Sub
 
 

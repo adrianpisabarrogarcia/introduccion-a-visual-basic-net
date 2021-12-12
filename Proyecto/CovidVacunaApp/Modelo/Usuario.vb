@@ -19,14 +19,10 @@
     End Sub
 
     Public Sub registrar(user As Usuario)
-        Dim nombre As String = user.nombre
-        Dim usuario As String = user.usuario
-        Dim password As String = user.password
-        password = encriptarPassword(password)
+        user.password = encriptarPassword(user.password)
 
-
-
-
+        Dim bbdd = New BBDD
+        bbdd.registrarUsuario(user)
     End Sub
 
     Public Function encriptarPassword(ByVal strPwd As String) As String
