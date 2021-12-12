@@ -13,7 +13,12 @@
 
         If Not errores Then
             Dim controladorUsuario As New ControladorUsuario
-            controladorUsuario.accederUsuario(tbUser.Text, tbPassword.Text)
+            If controladorUsuario.accederUsuario(tbUser.Text, tbPassword.Text) Then
+                Me.Hide()
+                DatosCovid.Show()
+            Else
+                MessageBox.Show("Datos introducidos erróneos")
+            End If
         End If
 
 

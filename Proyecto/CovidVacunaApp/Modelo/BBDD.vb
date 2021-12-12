@@ -1,4 +1,4 @@
-﻿Imports MySql.Data
+﻿Imports MySql
 Imports MySql.Data.MySqlClient
 
 Public Class BBDD
@@ -32,7 +32,7 @@ Public Class BBDD
         Try
             inicializarConexion()
             conexion.Open()
-            MessageBox.Show("Conectado al servidor de bbdd")
+            'MessageBox.Show("Conectado al servidor de bbdd")
         Catch ex As MySqlException
             MessageBox.Show("Problemas al conectar al servidor de bbdd")
         End Try
@@ -42,7 +42,7 @@ Public Class BBDD
     Public Sub desconectar()
         Try
             conexion.Close()
-            MessageBox.Show("Desconectado del servidor de bbdd")
+            'MessageBox.Show("Desconectado del servidor de bbdd")
         Catch ex As MySqlException
             MessageBox.Show("Problemas al desconectarse del servidor de bbdd")
         End Try
@@ -75,6 +75,43 @@ Public Class BBDD
         desconectar()
     End Sub
 
+    Public Function listarUsuarios()
+        Dim query As String = "SELECT * FROM usuario;"
+        conectar()
+
+
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            Dim dr As MySqlDataReader
+            Dim dt As New DataTable
+            dr = cmd.ExecuteReader()
+            dt.Load(dr)
+
+            Dim ListOfUsers = New List(Of Usuario)
+
+            For Each row As DataRow In dt.Rows
+
+                Dim id As Integer = Integer.Parse(row("id"))
+                Dim nombre As String = CStr(row("name"))
+                Dim usuario As String = CStr(row("user"))
+                Dim pass As String = CStr(row("password"))
+
+                Dim user As New Usuario(id, nombre, usuario, pass)
+
+                ListOfUsers.Add(user)
+            Next
+            desconectar()
+
+
+            Return ListOfUsers
+
+        Catch ex As MySqlException
+            MessageBox.Show("Error sacando el listado de los usuarios")
+        End Try
+
+        Return 0
+
+    End Function
 
 
 

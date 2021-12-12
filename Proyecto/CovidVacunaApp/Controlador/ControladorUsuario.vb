@@ -11,12 +11,28 @@
     Public Function accederUsuario(usuario As String, password As String)
 
         password = encriptarPassword(password)
+        Dim passwordUsuarioConcreto As String = obtenerPasswordUsuarioConcreto(usuario)
 
-        If password = "hola" Then
-            MessageBox.Show("Bienvenido/a")
+        If password = passwordUsuarioConcreto Then
             Return True
         End If
         Return False
+
+    End Function
+
+    Public Function obtenerPasswordUsuarioConcreto(user As String)
+        Dim listaUsuarios = New List(Of Usuario)
+        Dim baseDatos As New BBDD()
+        listaUsuarios = baseDatos.listarUsuarios()
+
+        Dim password As String = ""
+        For Each usuario As Usuario In listaUsuarios
+            If usuario.usuario = user Then
+                Return usuario.password
+            End If
+        Next
+        Return ""
+
 
     End Function
 

@@ -123,6 +123,12 @@
     <Compile Include="Controlador\ControladorUsuario.vb" />
     <Compile Include="Modelo\BBDD.vb" />
     <Compile Include="Modelo\Usuario.vb" />
+    <Compile Include="Vista\DatosCovid.Designer.vb">
+      <DependentUpon>DatosCovid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\DatosCovid.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vista\InicioSesion.vb">
       <SubType>Form</SubType>
     </Compile>

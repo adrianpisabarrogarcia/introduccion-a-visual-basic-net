@@ -18,5 +18,9 @@
         Me.password = password
     End Sub
 
+    Public Sub imprimir()
+        MessageBox.Show("Id: " & Me.id & "; Nombre: " & Me.nombre & "; Usuario: " & Me.usuario & "; Password: " & Me.password)
+    End Sub
+
 
 End Class
