@@ -22,28 +22,30 @@ Partial Class RegistrarUsuario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.bRegistrarUsuario = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.tbNombre = New System.Windows.Forms.TextBox()
         Me.tbUsuario = New System.Windows.Forms.TextBox()
         Me.tbPassword = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.bAtras = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'bRegistrarUsuario
         '
-        Me.Button1.Location = New System.Drawing.Point(135, 247)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(478, 43)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Registrar usuario"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.bRegistrarUsuario.Location = New System.Drawing.Point(135, 247)
+        Me.bRegistrarUsuario.Name = "bRegistrarUsuario"
+        Me.bRegistrarUsuario.Size = New System.Drawing.Size(349, 43)
+        Me.bRegistrarUsuario.TabIndex = 0
+        Me.bRegistrarUsuario.Text = "Registrar usuario"
+        Me.bRegistrarUsuario.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(132, 110)
+        Me.Label1.Location = New System.Drawing.Point(158, 163)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 16)
         Me.Label1.TabIndex = 1
@@ -52,7 +54,7 @@ Partial Class RegistrarUsuario
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(132, 60)
+        Me.Label2.Location = New System.Drawing.Point(132, 63)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(129, 16)
         Me.Label2.TabIndex = 2
@@ -83,23 +85,46 @@ Partial Class RegistrarUsuario
         '
         'tbPassword
         '
-        Me.tbPassword.Location = New System.Drawing.Point(275, 159)
+        Me.tbPassword.Location = New System.Drawing.Point(275, 161)
         Me.tbPassword.Name = "tbPassword"
+        Me.tbPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tbPassword.Size = New System.Drawing.Size(338, 22)
         Me.tbPassword.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(132, 113)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(57, 16)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Usuario:"
+        '
+        'bAtras
+        '
+        Me.bAtras.ForeColor = System.Drawing.Color.Brown
+        Me.bAtras.Location = New System.Drawing.Point(490, 247)
+        Me.bAtras.Name = "bAtras"
+        Me.bAtras.Size = New System.Drawing.Size(123, 43)
+        Me.bAtras.TabIndex = 8
+        Me.bAtras.Text = "Atrás"
+        Me.bAtras.UseVisualStyleBackColor = True
         '
         'RegistrarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 327)
+        Me.Controls.Add(Me.bAtras)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.tbPassword)
         Me.Controls.Add(Me.tbUsuario)
         Me.Controls.Add(Me.tbNombre)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.bRegistrarUsuario)
+        Me.KeyPreview = True
         Me.Name = "RegistrarUsuario"
         Me.Text = "Registro de Usuario"
         Me.ResumeLayout(False)
@@ -107,11 +132,13 @@ Partial Class RegistrarUsuario
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents bRegistrarUsuario As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents tbNombre As TextBox
     Friend WithEvents tbUsuario As TextBox
     Friend WithEvents tbPassword As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents bAtras As Button
 End Class

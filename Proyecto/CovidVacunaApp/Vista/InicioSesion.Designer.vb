@@ -23,7 +23,7 @@ Partial Class InicioSesion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.bRegistrarse = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.bAcceder = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tbUser = New System.Windows.Forms.TextBox()
@@ -39,16 +39,16 @@ Partial Class InicioSesion
         Me.bRegistrarse.Text = "✏ Registrarte"
         Me.bRegistrarse.UseVisualStyleBackColor = True
         '
-        'Button1
+        'bAcceder
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.ForestGreen
-        Me.Button1.Location = New System.Drawing.Point(381, 180)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(117, 36)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "🔑 Acceder"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.bAcceder.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bAcceder.ForeColor = System.Drawing.Color.ForestGreen
+        Me.bAcceder.Location = New System.Drawing.Point(381, 180)
+        Me.bAcceder.Name = "bAcceder"
+        Me.bAcceder.Size = New System.Drawing.Size(117, 36)
+        Me.bAcceder.TabIndex = 1
+        Me.bAcceder.Text = "🔑 Acceder"
+        Me.bAcceder.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -79,6 +79,7 @@ Partial Class InicioSesion
         '
         Me.tbPassword.Location = New System.Drawing.Point(316, 122)
         Me.tbPassword.Name = "tbPassword"
+        Me.tbPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tbPassword.Size = New System.Drawing.Size(256, 22)
         Me.tbPassword.TabIndex = 5
         '
@@ -91,7 +92,7 @@ Partial Class InicioSesion
         Me.Controls.Add(Me.tbUser)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.bAcceder)
         Me.Controls.Add(Me.bRegistrarse)
         Me.Name = "InicioSesion"
         Me.Text = "Form1"
@@ -101,7 +102,7 @@ Partial Class InicioSesion
     End Sub
 
     Friend WithEvents bRegistrarse As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents bAcceder As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents tbUser As TextBox

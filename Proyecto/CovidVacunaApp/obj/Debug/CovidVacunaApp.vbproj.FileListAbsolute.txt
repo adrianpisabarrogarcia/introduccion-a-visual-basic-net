@@ -34,3 +34,4 @@ C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVa
 C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVacunaApp\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVacunaApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVacunaApp\obj\Debug\CovidVacunaApp.vbproj.CopyComplete
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVacunaApp\obj\Debug\CovidVacunaApp.RegistrarUsuario.resources

@@ -10,21 +10,27 @@ Public Class BBDD
 
     'Inicializar todos los datos de la base de datos
     Public Sub inicializarConexion()
-        'Datos
-        Dim servidor As String = "127.0.0.1"
-        Dim usuario As String = "root"
-        Dim pswd As String = ""
-        Dim baseDeDatos As String = "covidvacunaapp"
+        Try
+            'Datos
+            Dim servidor As String = "127.0.0.1"
+            Dim usuario As String = "root"
+            Dim pswd As String = ""
+            Dim baseDeDatos As String = "covidvacunaapp"
 
-        'Inicializar la Conexión
-        conexion = New MySqlConnection()
-        conexion.ConnectionString = "server=" & servidor & ";" & "database=" & baseDeDatos & ";" & "user id=" & usuario & ";" & "password=" & pswd & ";"
+            'Inicializar la Conexión
+            conexion = New MySqlConnection()
+            conexion.ConnectionString = "server=" & servidor & ";" & "database=" & baseDeDatos & ";" & "user id=" & usuario & ";" & "password=" & pswd & ";"
+        Catch ex As Exception
+            MessageBox.Show("Error inicilizando conexión")
+        End Try
+
 
     End Sub
 
     'Para Conectarte a la base de datos
     Public Sub conectar()
         Try
+            inicializarConexion()
             conexion.Open()
             MessageBox.Show("Conectado al servidor de bbdd")
         Catch ex As MySqlException
@@ -61,8 +67,7 @@ Public Class BBDD
             cmd.ExecuteNonQuery()
             'para devolver datos:
             'MySqlDataReader rdr = cmd.ExecuteReader();
-
-
+            MessageBox.Show("Usuario registrado")
         Catch ex As Exception
             MessageBox.Show("Error registrando un usuario")
         End Try
