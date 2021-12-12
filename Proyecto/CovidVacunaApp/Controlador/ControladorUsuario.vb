@@ -1,5 +1,15 @@
 ﻿Public Class ControladorUsuario
 
+    Public Function existeUsuario(user As String)
+        Dim bbdd = New BBDD()
+        Dim usuario As Usuario
+        usuario = bbdd.getUsuarioConcreto(user)
+        If Not IsNothing(usuario) Then
+            MessageBox.Show("El usuario no esta disponible para registrarlo.")
+            Return True
+        End If
+        Return False
+    End Function
 
     Public Sub registrarUsuario(user As Usuario)
         user.password = encriptarPassword(user.password)

@@ -22,9 +22,29 @@ Partial Class DatosCovid
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.bDescargarDatos = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'bDescargarDatos
+        '
+        Me.bDescargarDatos.Location = New System.Drawing.Point(577, 54)
+        Me.bDescargarDatos.Name = "bDescargarDatos"
+        Me.bDescargarDatos.Size = New System.Drawing.Size(140, 40)
+        Me.bDescargarDatos.TabIndex = 0
+        Me.bDescargarDatos.Text = "Descargar datos"
+        Me.bDescargarDatos.UseVisualStyleBackColor = True
+        '
+        'DatosCovid
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.bDescargarDatos)
+        Me.Name = "DatosCovid"
         Me.Text = "DatosCovid"
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents bDescargarDatos As Button
 End Class

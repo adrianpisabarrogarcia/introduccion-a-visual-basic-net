@@ -120,6 +120,7 @@
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Controlador\ControladorComprobacionDatos.vb" />
+    <Compile Include="Controlador\ControladorDatos.vb" />
     <Compile Include="Controlador\ControladorUsuario.vb" />
     <Compile Include="Modelo\BBDD.vb" />
     <Compile Include="Modelo\Usuario.vb" />
@@ -165,6 +166,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\DatosCovid.resx">
+      <DependentUpon>DatosCovid.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\InicioSesion.resx">
       <DependentUpon>InicioSesion.vb</DependentUpon>

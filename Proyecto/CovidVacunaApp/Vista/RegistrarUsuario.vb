@@ -8,11 +8,12 @@
         Dim usuario As New Usuario(tbNombre.Text, tbUsuario.Text, tbPassword.Text)
         Dim errores As Boolean = False
         Dim erroresDatos As New ControladorComprobacionDatos
-        errores = erroresDatos.registroUsuarioValidacion(usuario)
+        Dim controladorUsuario As New ControladorUsuario
 
+        errores = erroresDatos.registroUsuarioValidacion(usuario)
+        errores = controladorUsuario.existeUsuario(usuario.usuario)
         If Not errores Then
-            Dim controladorUsuario As New ControladorUsuario
-            controladorUsuario.registrarUsuario(usuario)
+            ControladorUsuario.registrarUsuario(usuario)
         End If
 
         tbNombre.Text = ""

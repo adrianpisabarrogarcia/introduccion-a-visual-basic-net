@@ -57,6 +57,10 @@ Public Class BBDD
     ' FUNCIONES DE BBDD
     ''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+    '''''''''''''''''''''''''''''''''''''
+    ' USUARIOS - BBDD
+    '''''''''''''''''''''''''''''''''''''
+
     Public Sub registrarUsuario(user As Usuario)
         Dim query As String = "INSERT INTO usuario (name, user, password)
                                 VALUES ('" & user.nombre & "', '" & user.usuario & "', '" & user.password & "'); "
@@ -113,6 +117,56 @@ Public Class BBDD
 
     End Function
 
+    Public Function getUsuarioConcreto(usuarioEnBBDD As String)
+        Dim query As String = "SELECT * FROM usuario WHERE user = '" & usuarioEnBBDD & "';"
+        conectar()
+
+
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            Dim dr As MySqlDataReader
+            Dim dt As New DataTable
+            dr = cmd.ExecuteReader()
+            dt.Load(dr)
+
+
+            For Each row As DataRow In dt.Rows
+
+                Dim id As Integer = Integer.Parse(row("id"))
+                Dim nombre As String = CStr(row("name"))
+                Dim usuario As String = CStr(row("user"))
+                Dim pass As String = CStr(row("password"))
+
+                Dim user = New Usuario(id, nombre, usuario, pass)
+                desconectar()
+
+                Return user
+            Next
+
+            desconectar()
+            Return Nothing
+
+        Catch ex As MySqlException
+            MessageBox.Show("Error sacando el un usuario")
+        End Try
+
+        Return 0
+
+    End Function
+
+
+
+    '''''''''''''''''''''''''''''''''''''
+    ' COMUNIDADES - BBDD
+    '''''''''''''''''''''''''''''''''''''
+
+
+
+
+
+    '''''''''''''''''''''''''''''''''''''
+    ' DATOS - BBDD
+    '''''''''''''''''''''''''''''''''''''
 
 
 
