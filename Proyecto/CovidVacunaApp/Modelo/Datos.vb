@@ -11,11 +11,7 @@
     Property porcentajePoblacionAdministradas As Double
     Property porcentajePoblacionCompletas As Double
     Property fecha As Date
-
-
-
-
-
+    Property comunidad As Comunidad
 
 
     Public Sub New(dosisAdministradas As Double,
@@ -27,7 +23,7 @@
                    porcentajeEntregadas As Double,
                    porcentajePoblacionAdministradas As Double,
                    porcentajePoblacionCompletas As Double,
-                   fecha As Date)
+                   fecha As Date, comunidad As Comunidad)
         Me.dosisAdministradas = dosisAdministradas
         Me.dosisEntregadas = dosisEntregadas
         Me.dosisEntregadasModerna = dosisEntregadasModerna
@@ -38,6 +34,7 @@
         Me.porcentajePoblacionAdministradas = porcentajePoblacionAdministradas
         Me.porcentajePoblacionCompletas = porcentajePoblacionCompletas
         Me.fecha = fecha
+        Me.comunidad = comunidad
 
     End Sub
 
@@ -54,7 +51,9 @@
                 Porcentaje porcentajeEntregadas: " & Me.porcentajeEntregadas & ";
                 Porcentaje porcentajePoblacionAdministradas: " & Me.porcentajePoblacionAdministradas & ";
                 Porcentaje porcentajePoblacionCompletas: " & Me.porcentajePoblacionCompletas & ";
-                Fecha: " & Me.fecha)
+                Fecha: " & Me.fecha & "
+                Comunidad: " & Me.comunidad.nombre & "-" & Me.comunidad.id
+               )
     End Sub
 
 

@@ -160,6 +160,44 @@ Public Class BBDD
     ' COMUNIDADES - BBDD
     '''''''''''''''''''''''''''''''''''''
 
+    Public Function listarComunidades()
+        Dim query As String = "SELECT * FROM comunidad;"
+        conectar()
+
+
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            Dim dr As MySqlDataReader
+            Dim dt As New DataTable
+            dr = cmd.ExecuteReader()
+            dt.Load(dr)
+
+            Dim ListOfComunidades = New List(Of Comunidad)
+
+            For Each row As DataRow In dt.Rows
+
+                Dim id As Integer = Integer.Parse(row("id"))
+                Dim nombre As String = CStr(row("nombre"))
+
+                Dim comunidad As New Comunidad(id, nombre)
+
+                ListOfComunidades.Add(comunidad)
+            Next
+            desconectar()
+
+
+            Return ListOfComunidades
+
+        Catch ex As MySqlException
+            MessageBox.Show("Error sacando el listado de comunidades")
+        End Try
+
+        Return 0
+
+    End Function
+
+
+
 
 
 
@@ -168,7 +206,34 @@ Public Class BBDD
     ' DATOS - BBDD
     '''''''''''''''''''''''''''''''''''''
 
+    Public Sub insertarDatos(dato As Datos)
+        Dim query As String = ""
+        Try
+            query = "INSERT INTO datos (comunidad_id, dosisAdministradas, dosisEntregadas, dosisEntregadasModerna, dosisEntregadasPfizer, dosisEntregadasAstrazeneca, dosisPautaCompletada, porcentajeEntregadas, porcentajePoblacionAdministradas, porcentajePoblacionCompletas, fecha)
+                                    VALUES ('" & dato.comunidad.id & "', '" & dato.dosisAdministradas & "', '" & dato.dosisEntregadas & "', '" & dato.dosisEntregadasModerna & "', '" & dato.dosisEntregadasPfizer & "', '" & dato.dosisEntregadasAstrazeneca & "', '" & dato.dosisPautaCompletada & "', '" & dato.porcentajeEntregadas & "', '" & dato.porcentajePoblacionAdministradas & "', '" & dato.porcentajePoblacionCompletas & "', '" & Format(dato.fecha, "yyyy-MMd-d") & "'); "
 
+        Catch ex As Exception
+            dato.imprimir()
+        End Try
+
+
+
+
+
+        conectar()
+
+        'Try
+        Dim cmd = New MySqlCommand(query, conexion)
+        cmd.ExecuteNonQuery()
+        'para devolver datos:
+        'MySqlDataReader rdr = cmd.ExecuteReader();
+        'MessageBox.Show("Usuario registrado")
+        'Catch ex As Exception
+        '    MessageBox.Show("Error insertando un dato" & ex.ToString())
+        'End Try
+
+        desconectar()
+    End Sub
 
 
 

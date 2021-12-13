@@ -20,7 +20,7 @@
         Dim texto As String = "Id: " & Me.id & "; Nombre: " & Me.nombre
 
         For Each dato As Datos In Me.datos
-            texto = texto & 
+            texto = texto & "{" &
                 "Dosis Administradas: " & dato.dosisAdministradas & ";
                 Dosis Entregadas: " & dato.dosisEntregadas & ";
                 Dosis Entregadas Moderna: " & dato.dosisEntregadasModerna & ";
@@ -30,13 +30,13 @@
                 Porcentaje porcentajeEntregadas: " & dato.porcentajeEntregadas & ";
                 Porcentaje porcentajePoblacionAdministradas: " & dato.porcentajePoblacionAdministradas & ";
                 Porcentaje porcentajePoblacionCompletas: " & dato.porcentajePoblacionCompletas & ";
-                Fecha: " & dato.fecha
-
+                Fecha: " & dato.fecha & "}."
         Next
 
+        MessageBox.Show(texto)
 
 
-        MessageBox.Show()
+
     End Sub
 
 
