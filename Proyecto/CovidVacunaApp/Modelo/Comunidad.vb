@@ -10,7 +10,7 @@
         Me.nombre = nombre
     End Sub
 
-    Public Sub New(id As Integer, nombre As String, datos As List(Of Datos)
+    Public Sub New(id As Integer, nombre As String, datos As List(Of Datos))
         Me.id = id
         Me.nombre = nombre
         Me.datos = datos

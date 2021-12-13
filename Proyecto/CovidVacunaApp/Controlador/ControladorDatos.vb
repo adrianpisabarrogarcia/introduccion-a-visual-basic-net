@@ -43,23 +43,6 @@ Public Class ControladorDatos
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             End If
 
             'Catch ex As Exception
