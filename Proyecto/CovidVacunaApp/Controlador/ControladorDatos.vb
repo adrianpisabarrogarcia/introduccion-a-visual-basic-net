@@ -24,11 +24,12 @@ Public Class ControladorDatos
                 Dim json As String = File.ReadAllText(rutaDescarga)
                 'Dim jsonres = JToken.Parse(json)
                 'MessageBox.Show(jsonres.First().ToString)
-
                 'MessageBox.Show(jsonres.Type)
+                'Dim andalucia = jsonres.First().SelectToken("ccaa").ToString
+                'MessageBox.Show(andalucia)
 
                 Dim array = JArray.Parse(json)
-                'MessageBox.Show(array.ElementAt(1).ToString)
+                'MessageBox.Show(array.ElementAt(1).ToString)   'Comprobación que funciona
                 Dim texto As String = ""
                 For i As Integer = 0 To array.Count - 1
                     texto = array.ElementAt(i).SelectToken("ccaa").ToString & "\n"
@@ -45,8 +46,7 @@ Public Class ControladorDatos
 
 
 
-                'Dim andalucia = jsonres.First().SelectToken("ccaa").ToString
-                'MessageBox.Show(andalucia)
+
 
 
 
