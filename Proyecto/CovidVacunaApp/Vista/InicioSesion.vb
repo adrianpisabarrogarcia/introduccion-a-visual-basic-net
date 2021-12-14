@@ -22,6 +22,9 @@
         End If
 
 
+        tbUser.Text = ""
+        tbPassword.Text = ""
+
 
     End Sub
 

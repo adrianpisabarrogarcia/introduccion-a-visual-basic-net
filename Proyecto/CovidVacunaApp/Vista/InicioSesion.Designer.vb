@@ -22,6 +22,7 @@ Partial Class InicioSesion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InicioSesion))
         Me.bRegistrarse = New System.Windows.Forms.Button()
         Me.bAcceder = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -94,8 +95,9 @@ Partial Class InicioSesion
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.bAcceder)
         Me.Controls.Add(Me.bRegistrarse)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "InicioSesion"
-        Me.Text = "Form1"
+        Me.Text = "Inicio de Sesión"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

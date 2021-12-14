@@ -63,6 +63,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
@@ -312,6 +315,12 @@
     <Compile Include="Vista\DatosCovid.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Vista\EdicionDatos.Designer.vb">
+      <DependentUpon>EdicionDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\EdicionDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vista\InicioSesion.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -352,6 +361,9 @@
     <EmbeddedResource Include="Vista\DatosCovid.resx">
       <DependentUpon>DatosCovid.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\EdicionDatos.resx">
+      <DependentUpon>EdicionDatos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\InicioSesion.resx">
       <DependentUpon>InicioSesion.vb</DependentUpon>
     </EmbeddedResource>
@@ -386,6 +398,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -132,3 +132,4 @@ C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVa
 C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVacunaApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVacunaApp\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVacunaApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\apisabarro\Desktop\Git\introduccion-a-visual-basic-net\Proyecto\CovidVacunaApp\obj\Debug\CovidVacunaApp.EdicionDatos.resources
