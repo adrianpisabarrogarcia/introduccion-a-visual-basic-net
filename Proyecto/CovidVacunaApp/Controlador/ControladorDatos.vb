@@ -209,4 +209,41 @@ Public Class ControladorDatos
 
     End Sub
 
+
+    Public Function obtenerDatosConFechaComunidadConcretos(comunidad As String, fecha As Date)
+        Dim bbdd = New BBDD
+        Dim comunidadId As Integer = 0
+
+        Dim listOfComunidades = New List(Of Comunidad)
+        listOfComunidades = bbdd.listarComunidades()
+
+        'Buscar a que comunidad pertenece
+        For Each com As Comunidad In listOfComunidades
+            If com.nombre = comunidad Then
+                comunidadId = com.id
+                Exit For
+            End If
+        Next
+
+        Return bbdd.obtenerDatosConFechaComunidadConcretos(comunidadId, fecha)
+
+    End Function
+
+    Public Function mostrarDato(id As Integer)
+        Dim bbdd = New BBDD
+        Return bbdd.getDato(id)
+    End Function
+
+    Public Sub modificarDato(dato As Datos)
+        Dim bbdd = New BBDD
+        bbdd.modificarDato(dato)
+    End Sub
+
+    Public Sub eliminarDato(id As Integer)
+        Dim bbdd = New BBDD
+        bbdd.eliminarDato(id)
+    End Sub
+
+
+
 End Class

@@ -24,7 +24,9 @@
                    porcentajeEntregadas As Double,
                    porcentajePoblacionAdministradas As Double,
                    porcentajePoblacionCompletas As Double,
-                   fecha As Date, comunidad As Comunidad)
+                   fecha As Date,
+                   comunidad As Comunidad)
+        Me.id = id
         Me.dosisAdministradas = dosisAdministradas
         Me.dosisEntregadas = dosisEntregadas
         Me.dosisEntregadasModerna = dosisEntregadasModerna
@@ -36,7 +38,6 @@
         Me.porcentajePoblacionCompletas = porcentajePoblacionCompletas
         Me.fecha = fecha
         Me.comunidad = comunidad
-
     End Sub
 
 

@@ -33,7 +33,7 @@ Partial Class EdicionDatos
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbComunidad = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.fecha = New System.Windows.Forms.DateTimePicker()
@@ -47,6 +47,7 @@ Partial Class EdicionDatos
         Me.nPorcentajePoblacionCompletas = New System.Windows.Forms.NumericUpDown()
         Me.nPorcentajeEntregadas = New System.Windows.Forms.NumericUpDown()
         Me.bEliminarRegistro = New System.Windows.Forms.Button()
+        Me.bVolver = New System.Windows.Forms.Button()
         CType(Me.nDosisAdministradas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nDosisEntregadas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nDosisEntregadasModerna, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -92,7 +93,7 @@ Partial Class EdicionDatos
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(88, 187)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(148, 20)
+        Me.Label3.Size = New System.Drawing.Size(118, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Dosis Entregadas:"
         '
@@ -101,7 +102,7 @@ Partial Class EdicionDatos
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(88, 232)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(223, 20)
+        Me.Label4.Size = New System.Drawing.Size(178, 16)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Dosis Entregadas Moderna: "
         '
@@ -110,7 +111,7 @@ Partial Class EdicionDatos
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(88, 275)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(196, 20)
+        Me.Label5.Size = New System.Drawing.Size(157, 16)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Dosis Entregadas Pfizer: "
         '
@@ -119,7 +120,7 @@ Partial Class EdicionDatos
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(88, 320)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(249, 20)
+        Me.Label6.Size = New System.Drawing.Size(199, 16)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Dosis Entregadas Astrazeneca: "
         '
@@ -128,7 +129,7 @@ Partial Class EdicionDatos
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(88, 364)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(204, 20)
+        Me.Label7.Size = New System.Drawing.Size(163, 16)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Dosis Pauta Completada: "
         '
@@ -137,7 +138,7 @@ Partial Class EdicionDatos
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(575, 103)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(185, 20)
+        Me.Label8.Size = New System.Drawing.Size(148, 16)
         Me.Label8.TabIndex = 8
         Me.Label8.Text = "Porcentaje Entregadas:"
         '
@@ -151,21 +152,21 @@ Partial Class EdicionDatos
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "Comunidad: "
         '
-        'TextBox1
+        'tbComunidad
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(285, 24)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(381, 38)
-        Me.TextBox1.TabIndex = 10
+        Me.tbComunidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbComunidad.Location = New System.Drawing.Point(285, 24)
+        Me.tbComunidad.Name = "tbComunidad"
+        Me.tbComunidad.ReadOnly = True
+        Me.tbComunidad.Size = New System.Drawing.Size(381, 38)
+        Me.tbComunidad.TabIndex = 10
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(575, 143)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(289, 20)
+        Me.Label10.Size = New System.Drawing.Size(231, 16)
         Me.Label10.TabIndex = 11
         Me.Label10.Text = "Porcentaje Población Administradas: "
         '
@@ -174,7 +175,7 @@ Partial Class EdicionDatos
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(575, 187)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(259, 20)
+        Me.Label11.Size = New System.Drawing.Size(207, 16)
         Me.Label11.TabIndex = 12
         Me.Label11.Text = "Porcentaje Población Completas:"
         '
@@ -188,6 +189,7 @@ Partial Class EdicionDatos
         'nDosisAdministradas
         '
         Me.nDosisAdministradas.Location = New System.Drawing.Point(300, 141)
+        Me.nDosisAdministradas.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nDosisAdministradas.Name = "nDosisAdministradas"
         Me.nDosisAdministradas.Size = New System.Drawing.Size(203, 22)
         Me.nDosisAdministradas.TabIndex = 14
@@ -195,6 +197,7 @@ Partial Class EdicionDatos
         'nDosisEntregadas
         '
         Me.nDosisEntregadas.Location = New System.Drawing.Point(300, 187)
+        Me.nDosisEntregadas.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nDosisEntregadas.Name = "nDosisEntregadas"
         Me.nDosisEntregadas.Size = New System.Drawing.Size(203, 22)
         Me.nDosisEntregadas.TabIndex = 15
@@ -202,6 +205,7 @@ Partial Class EdicionDatos
         'nDosisEntregadasModerna
         '
         Me.nDosisEntregadasModerna.Location = New System.Drawing.Point(300, 232)
+        Me.nDosisEntregadasModerna.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nDosisEntregadasModerna.Name = "nDosisEntregadasModerna"
         Me.nDosisEntregadasModerna.Size = New System.Drawing.Size(203, 22)
         Me.nDosisEntregadasModerna.TabIndex = 16
@@ -209,6 +213,7 @@ Partial Class EdicionDatos
         'nDosisEntregadasPfizer
         '
         Me.nDosisEntregadasPfizer.Location = New System.Drawing.Point(300, 273)
+        Me.nDosisEntregadasPfizer.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nDosisEntregadasPfizer.Name = "nDosisEntregadasPfizer"
         Me.nDosisEntregadasPfizer.Size = New System.Drawing.Size(203, 22)
         Me.nDosisEntregadasPfizer.TabIndex = 17
@@ -216,6 +221,7 @@ Partial Class EdicionDatos
         'nDosisEntregadasAstrazeneca
         '
         Me.nDosisEntregadasAstrazeneca.Location = New System.Drawing.Point(300, 318)
+        Me.nDosisEntregadasAstrazeneca.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nDosisEntregadasAstrazeneca.Name = "nDosisEntregadasAstrazeneca"
         Me.nDosisEntregadasAstrazeneca.Size = New System.Drawing.Size(203, 22)
         Me.nDosisEntregadasAstrazeneca.TabIndex = 18
@@ -223,6 +229,7 @@ Partial Class EdicionDatos
         'nDosisPautaCompleta
         '
         Me.nDosisPautaCompleta.Location = New System.Drawing.Point(300, 362)
+        Me.nDosisPautaCompleta.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nDosisPautaCompleta.Name = "nDosisPautaCompleta"
         Me.nDosisPautaCompleta.Size = New System.Drawing.Size(203, 22)
         Me.nDosisPautaCompleta.TabIndex = 19
@@ -230,6 +237,7 @@ Partial Class EdicionDatos
         'nPorcentajePoblacionAdministradas
         '
         Me.nPorcentajePoblacionAdministradas.Location = New System.Drawing.Point(828, 141)
+        Me.nPorcentajePoblacionAdministradas.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nPorcentajePoblacionAdministradas.Name = "nPorcentajePoblacionAdministradas"
         Me.nPorcentajePoblacionAdministradas.Size = New System.Drawing.Size(203, 22)
         Me.nPorcentajePoblacionAdministradas.TabIndex = 20
@@ -237,6 +245,7 @@ Partial Class EdicionDatos
         'nPorcentajePoblacionCompletas
         '
         Me.nPorcentajePoblacionCompletas.Location = New System.Drawing.Point(828, 185)
+        Me.nPorcentajePoblacionCompletas.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nPorcentajePoblacionCompletas.Name = "nPorcentajePoblacionCompletas"
         Me.nPorcentajePoblacionCompletas.Size = New System.Drawing.Size(203, 22)
         Me.nPorcentajePoblacionCompletas.TabIndex = 21
@@ -244,6 +253,7 @@ Partial Class EdicionDatos
         'nPorcentajeEntregadas
         '
         Me.nPorcentajeEntregadas.Location = New System.Drawing.Point(828, 97)
+        Me.nPorcentajeEntregadas.Maximum = New Decimal(New Integer() {1874919423, 2328306, 0, 0})
         Me.nPorcentajeEntregadas.Name = "nPorcentajeEntregadas"
         Me.nPorcentajeEntregadas.Size = New System.Drawing.Size(203, 22)
         Me.nPorcentajeEntregadas.TabIndex = 22
@@ -259,11 +269,23 @@ Partial Class EdicionDatos
         Me.bEliminarRegistro.Text = "🗑 Eliminar registro"
         Me.bEliminarRegistro.UseVisualStyleBackColor = True
         '
+        'bVolver
+        '
+        Me.bVolver.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bVolver.ForeColor = System.Drawing.Color.Black
+        Me.bVolver.Location = New System.Drawing.Point(896, 22)
+        Me.bVolver.Name = "bVolver"
+        Me.bVolver.Size = New System.Drawing.Size(135, 47)
+        Me.bVolver.TabIndex = 24
+        Me.bVolver.Text = "Volver"
+        Me.bVolver.UseVisualStyleBackColor = True
+        '
         'EdicionDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1112, 424)
+        Me.Controls.Add(Me.bVolver)
         Me.Controls.Add(Me.bEliminarRegistro)
         Me.Controls.Add(Me.nPorcentajeEntregadas)
         Me.Controls.Add(Me.nPorcentajePoblacionCompletas)
@@ -277,7 +299,7 @@ Partial Class EdicionDatos
         Me.Controls.Add(Me.fecha)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tbComunidad)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -315,7 +337,7 @@ Partial Class EdicionDatos
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents tbComunidad As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents fecha As DateTimePicker
@@ -329,4 +351,5 @@ Partial Class EdicionDatos
     Friend WithEvents nPorcentajePoblacionCompletas As NumericUpDown
     Friend WithEvents nPorcentajeEntregadas As NumericUpDown
     Friend WithEvents bEliminarRegistro As Button
+    Friend WithEvents bVolver As Button
 End Class

@@ -254,8 +254,19 @@ Public Class BBDD
     End Sub
 
     Public Sub modificarDato(dato As Datos)
-        Dim query As String = "UPDATE dato
-                                SET column1 = value1, column2 = value2, ...
+
+
+        Dim query As String = "UPDATE datos
+                                SET fecha = '" & Format(dato.fecha, "yyyy-MM-dd") & "', 
+                                dosisAdministradas = '" & dato.dosisAdministradas & "', 
+                                dosisEntregadas = '" & dato.dosisEntregadas & "', 
+                                dosisEntregadasModerna = '" & dato.dosisEntregadasModerna & "', 
+                                dosisEntregadasPfizer = '" & dato.dosisEntregadasPfizer & "', 
+                                dosisEntregadasAstrazeneca = '" & dato.dosisEntregadasAstrazeneca & "', 
+                                dosisPautaCompletada = '" & dato.dosisPautaCompletada & "', 
+                                porcentajeEntregadas = '" & dato.porcentajeEntregadas & "', 
+                                porcentajePoblacionAdministradas = '" & dato.porcentajePoblacionAdministradas & "', 
+                                porcentajePoblacionCompletas = '" & dato.porcentajePoblacionCompletas & "' 
                                 WHERE id = " & dato.id & "; "
 
         conectar()
@@ -267,7 +278,7 @@ Public Class BBDD
             'MySqlDataReader rdr = cmd.ExecuteReader();
             'MessageBox.Show("Usuario registrado")
         Catch ex As Exception
-            MessageBox.Show("Error eliminarndo un dato")
+            MessageBox.Show("Error modificando un dato")
         End Try
 
         desconectar()
@@ -292,7 +303,129 @@ Public Class BBDD
         desconectar()
     End Sub
 
+    Public Function obtenerDatosConFechaComunidadConcretos(comunidadID As Integer, fecha As Date)
+        Dim query As String = "SELECT * FROM datos WHERE fecha = '" & Format(fecha, "yyyy-MM-dd").ToString() & "' AND comunidad_id = '" & comunidadID & "' ;"
+
+        If comunidadID = 0 Then
+            query = "SELECT * FROM datos WHERE fecha = '" & Format(fecha, "yyyy-MM-dd").ToString() & "' ;"
+        End If
+        conectar()
 
 
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            Dim dr As MySqlDataReader
+            Dim dt As New DataTable
+            dr = cmd.ExecuteReader()
+            dt.Load(dr)
+
+            Dim ListOfData = New List(Of Datos)
+            Dim ListOfCommunities = listarComunidades()
+
+
+            For Each row As DataRow In dt.Rows
+
+                Dim id As Integer = Integer.Parse(row("id"))
+                Dim dosisAdministradas As Double = Double.Parse(row("dosisAdministradas"))
+                Dim dosisEntregadas As Double = Double.Parse(row("dosisEntregadas"))
+                Dim dosisEntregadasModerna As Double = Double.Parse(row("dosisEntregadasModerna"))
+                Dim dosisEntregadasPfizer As Double = Double.Parse(row("dosisEntregadasPfizer"))
+                Dim dosisEntregadasAstrazeneca As Double = Double.Parse(row("dosisEntregadasAstrazeneca"))
+                Dim dosisPautaCompletada As Double = Double.Parse(row("dosisPautaCompletada"))
+                Dim porcentajeEntregadas As Double = Double.Parse(row("porcentajeEntregadas"))
+                Dim porcentajePoblacionAdministradas As Double = Double.Parse(row("porcentajePoblacionAdministradas"))
+                Dim porcentajePoblacionCompletas As Double = Double.Parse(row("porcentajePoblacionCompletas"))
+                Dim dateBBDD As Date = CDate(CStr(row("fecha")))
+                Dim comunidadIdBBDD As Integer = Integer.Parse(row("comunidad_id"))
+
+                Dim comunidad = Nothing
+
+                For Each com As Comunidad In ListOfCommunities
+                    If com.id = comunidadIdBBDD Then
+                        comunidad = New Comunidad(com.id, com.nombre)
+                        Exit For
+                    End If
+                Next
+
+
+                Dim dato As New Datos(id, dosisAdministradas, dosisEntregadas, dosisEntregadasModerna,
+                                      dosisEntregadasPfizer, dosisEntregadasAstrazeneca,
+                                      dosisPautaCompletada, porcentajeEntregadas, porcentajePoblacionAdministradas,
+                                      porcentajePoblacionCompletas, dateBBDD, comunidad)
+
+                'dato.imprimir()
+                ListOfData.Add(dato)
+            Next
+            desconectar()
+
+
+            Return ListOfData
+
+        Catch ex As MySqlException
+            MessageBox.Show("Error sacando el listado de datos concretos")
+        End Try
+
+        Return Nothing
+    End Function
+
+    Public Function getDato(id As Integer)
+        Dim query As String = ""
+
+        query = "SELECT * FROM datos WHERE id = '" & id & "' ;"
+        conectar()
+
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            Dim dr As MySqlDataReader
+            Dim dt As New DataTable
+            dr = cmd.ExecuteReader()
+            dt.Load(dr)
+
+            Dim ListOfCommunities = listarComunidades()
+
+
+            For Each row As DataRow In dt.Rows
+
+                Dim idBBDD As Integer = Integer.Parse(row("id"))
+                Dim dosisAdministradas As Double = Double.Parse(row("dosisAdministradas"))
+                Dim dosisEntregadas As Double = Double.Parse(row("dosisEntregadas"))
+                Dim dosisEntregadasModerna As Double = Double.Parse(row("dosisEntregadasModerna"))
+                Dim dosisEntregadasPfizer As Double = Double.Parse(row("dosisEntregadasPfizer"))
+                Dim dosisEntregadasAstrazeneca As Double = Double.Parse(row("dosisEntregadasAstrazeneca"))
+                Dim dosisPautaCompletada As Double = Double.Parse(row("dosisPautaCompletada"))
+                Dim porcentajeEntregadas As Double = Double.Parse(row("porcentajeEntregadas"))
+                Dim porcentajePoblacionAdministradas As Double = Double.Parse(row("porcentajePoblacionAdministradas"))
+                Dim porcentajePoblacionCompletas As Double = Double.Parse(row("porcentajePoblacionCompletas"))
+                Dim dateBBDD As Date = CDate(CStr(row("fecha")))
+                Dim comunidadIdBBDD As Integer = Integer.Parse(row("comunidad_id"))
+
+                Dim comunidad = Nothing
+
+                For Each com As Comunidad In ListOfCommunities
+                    If com.id = comunidadIdBBDD Then
+                        comunidad = New Comunidad(com.id, com.nombre)
+                        Exit For
+                    End If
+                Next
+
+
+                Dim dato As New Datos(idBBDD, dosisAdministradas, dosisEntregadas, dosisEntregadasModerna,
+                                      dosisEntregadasPfizer, dosisEntregadasAstrazeneca,
+                                      dosisPautaCompletada, porcentajeEntregadas, porcentajePoblacionAdministradas,
+                                      porcentajePoblacionCompletas, dateBBDD, comunidad)
+
+                Return dato
+
+            Next
+            desconectar()
+
+
+
+        Catch ex As MySqlException
+            MessageBox.Show("Error sacando el un dato")
+        End Try
+
+        Return 0
+    End Function
 
 End Class

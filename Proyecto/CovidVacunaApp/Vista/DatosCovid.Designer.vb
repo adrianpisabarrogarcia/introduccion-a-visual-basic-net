@@ -25,7 +25,13 @@ Partial Class DatosCovid
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DatosCovid))
         Me.bDescargarDatos = New System.Windows.Forms.Button()
         Me.bImportarDatos = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dataGridCovid = New System.Windows.Forms.DataGridView()
+        Me.cComunidades = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.bBuscar = New System.Windows.Forms.Button()
+        Me.fecha = New System.Windows.Forms.DateTimePicker()
+        Me.bCerrarSesion = New System.Windows.Forms.Button()
         Me.cComunidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cFecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cDosisAdministradas = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -37,13 +43,8 @@ Partial Class DatosCovid
         Me.cPorcentajeEntregadas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cPorcentajePoblacionAdministradas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cPorcentajePoblacionCompletas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cComunidades = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.bBuscar = New System.Windows.Forms.Button()
-        Me.fecha = New System.Windows.Forms.DateTimePicker()
-        Me.bCerrarSesion = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.dataGridCovid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bDescargarDatos
@@ -64,17 +65,70 @@ Partial Class DatosCovid
         Me.bImportarDatos.Text = "📲 Importar datos"
         Me.bImportarDatos.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'dataGridCovid
         '
-        Me.DataGridView1.AllowUserToOrderColumns = True
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.cComunidad, Me.cFecha, Me.cDosisAdministradas, Me.cDosisEntregadas, Me.cDosisEntregadasModerna, Me.cDosisEntregadasPfizer, Me.cDosisEntregadasAstrazeneca, Me.cDosisPautaCompletada, Me.cPorcentajeEntregadas, Me.cPorcentajePoblacionAdministradas, Me.cPorcentajePoblacionCompletas})
-        Me.DataGridView1.Location = New System.Drawing.Point(21, 95)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1439, 592)
-        Me.DataGridView1.TabIndex = 2
+        Me.dataGridCovid.AllowUserToOrderColumns = True
+        Me.dataGridCovid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dataGridCovid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.cComunidad, Me.cFecha, Me.cDosisAdministradas, Me.cDosisEntregadas, Me.cDosisEntregadasModerna, Me.cDosisEntregadasPfizer, Me.cDosisEntregadasAstrazeneca, Me.cDosisPautaCompletada, Me.cPorcentajeEntregadas, Me.cPorcentajePoblacionAdministradas, Me.cPorcentajePoblacionCompletas, Me.id})
+        Me.dataGridCovid.Location = New System.Drawing.Point(21, 95)
+        Me.dataGridCovid.Name = "dataGridCovid"
+        Me.dataGridCovid.RowHeadersWidth = 51
+        Me.dataGridCovid.RowTemplate.Height = 24
+        Me.dataGridCovid.Size = New System.Drawing.Size(1439, 592)
+        Me.dataGridCovid.TabIndex = 2
+        '
+        'cComunidades
+        '
+        Me.cComunidades.FormattingEnabled = True
+        Me.cComunidades.Items.AddRange(New Object() {"Todas", "Andalucía", "Aragón", "Asturias", "Baleares", "Canarias", "Cantabria", "Castilla y Leon", "Castilla La Mancha", "Cataluña", "C. Valenciana", "Extremadura", "Galicia", "La Rioja", "Madrid", "Murcia", "Navarra", "País Vasco", "Ceuta", "Melilla", "Totales", "Fuerzas Armadas"})
+        Me.cComunidades.Location = New System.Drawing.Point(148, 39)
+        Me.cComunidades.Name = "cComunidades"
+        Me.cComunidades.Size = New System.Drawing.Size(249, 24)
+        Me.cComunidades.TabIndex = 3
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(40, 44)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(82, 16)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Comunidad: "
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(425, 42)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(51, 16)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Fecha: "
+        '
+        'bBuscar
+        '
+        Me.bBuscar.ForeColor = System.Drawing.Color.DarkGreen
+        Me.bBuscar.Location = New System.Drawing.Point(766, 33)
+        Me.bBuscar.Name = "bBuscar"
+        Me.bBuscar.Size = New System.Drawing.Size(140, 40)
+        Me.bBuscar.TabIndex = 6
+        Me.bBuscar.Text = "🔎 Buscar"
+        Me.bBuscar.UseVisualStyleBackColor = True
+        '
+        'fecha
+        '
+        Me.fecha.Location = New System.Drawing.Point(482, 40)
+        Me.fecha.Name = "fecha"
+        Me.fecha.Size = New System.Drawing.Size(260, 22)
+        Me.fecha.TabIndex = 7
+        '
+        'bCerrarSesion
+        '
+        Me.bCerrarSesion.Location = New System.Drawing.Point(1320, 719)
+        Me.bCerrarSesion.Name = "bCerrarSesion"
+        Me.bCerrarSesion.Size = New System.Drawing.Size(140, 40)
+        Me.bCerrarSesion.TabIndex = 8
+        Me.bCerrarSesion.Text = "Cerrar Sesión"
+        Me.bCerrarSesion.UseVisualStyleBackColor = True
         '
         'cComunidad
         '
@@ -164,57 +218,13 @@ Partial Class DatosCovid
         Me.cPorcentajePoblacionCompletas.ReadOnly = True
         Me.cPorcentajePoblacionCompletas.Width = 125
         '
-        'cComunidades
+        'id
         '
-        Me.cComunidades.FormattingEnabled = True
-        Me.cComunidades.Location = New System.Drawing.Point(148, 39)
-        Me.cComunidades.Name = "cComunidades"
-        Me.cComunidades.Size = New System.Drawing.Size(249, 24)
-        Me.cComunidades.TabIndex = 3
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(40, 44)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 16)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Comunidad: "
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(425, 42)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 16)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Fecha: "
-        '
-        'bBuscar
-        '
-        Me.bBuscar.ForeColor = System.Drawing.Color.DarkGreen
-        Me.bBuscar.Location = New System.Drawing.Point(766, 33)
-        Me.bBuscar.Name = "bBuscar"
-        Me.bBuscar.Size = New System.Drawing.Size(140, 40)
-        Me.bBuscar.TabIndex = 6
-        Me.bBuscar.Text = "🔎 Buscar"
-        Me.bBuscar.UseVisualStyleBackColor = True
-        '
-        'fecha
-        '
-        Me.fecha.Location = New System.Drawing.Point(482, 40)
-        Me.fecha.Name = "fecha"
-        Me.fecha.Size = New System.Drawing.Size(260, 22)
-        Me.fecha.TabIndex = 7
-        '
-        'bCerrarSesion
-        '
-        Me.bCerrarSesion.Location = New System.Drawing.Point(1320, 719)
-        Me.bCerrarSesion.Name = "bCerrarSesion"
-        Me.bCerrarSesion.Size = New System.Drawing.Size(140, 40)
-        Me.bCerrarSesion.TabIndex = 8
-        Me.bCerrarSesion.Text = "Cerrar Sesión"
-        Me.bCerrarSesion.UseVisualStyleBackColor = True
+        Me.id.HeaderText = "ID"
+        Me.id.MinimumWidth = 6
+        Me.id.Name = "id"
+        Me.id.ReadOnly = True
+        Me.id.Width = 125
         '
         'DatosCovid
         '
@@ -228,12 +238,12 @@ Partial Class DatosCovid
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cComunidades)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dataGridCovid)
         Me.Controls.Add(Me.bImportarDatos)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DatosCovid"
         Me.Text = "Datos Covid"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dataGridCovid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -241,7 +251,13 @@ Partial Class DatosCovid
 
     Friend WithEvents bDescargarDatos As Button
     Friend WithEvents bImportarDatos As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dataGridCovid As DataGridView
+    Friend WithEvents cComunidades As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents bBuscar As Button
+    Friend WithEvents fecha As DateTimePicker
+    Friend WithEvents bCerrarSesion As Button
     Friend WithEvents cComunidad As DataGridViewTextBoxColumn
     Friend WithEvents cFecha As DataGridViewTextBoxColumn
     Friend WithEvents cDosisAdministradas As DataGridViewTextBoxColumn
@@ -253,10 +269,5 @@ Partial Class DatosCovid
     Friend WithEvents cPorcentajeEntregadas As DataGridViewTextBoxColumn
     Friend WithEvents cPorcentajePoblacionAdministradas As DataGridViewTextBoxColumn
     Friend WithEvents cPorcentajePoblacionCompletas As DataGridViewTextBoxColumn
-    Friend WithEvents cComunidades As ComboBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents bBuscar As Button
-    Friend WithEvents fecha As DateTimePicker
-    Friend WithEvents bCerrarSesion As Button
+    Friend WithEvents id As DataGridViewTextBoxColumn
 End Class
