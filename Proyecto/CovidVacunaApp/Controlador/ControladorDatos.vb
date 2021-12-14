@@ -21,6 +21,8 @@ Public Class ControladorDatos
         Dim listaComunidades = New List(Of Comunidad)
         listaComunidades = bbdd.listarComunidades()
 
+        'Saltarte ese dato
+        Dim skip As Boolean = False
 
         For index As Integer = 0 To days
             Dim dia As String = CStr(Format(thisDate.AddDays(index), "yyyyMMdd"))
@@ -50,7 +52,9 @@ Public Class ControladorDatos
                             End If
                         Next
                     End If
-
+                    If comunidad Is Nothing Then
+                        skip = True
+                    End If
 
 
                     Dim dosisAdministradas As Double = Nothing
@@ -105,8 +109,12 @@ Public Class ControladorDatos
                     'fecha de los datos
                     Dim fecha As Date = Format(thisDate.AddDays(index), "dd/MM/yyyy")
 
-                    'Inserción del objeto entero
-                    Dim dato = New Datos(
+
+
+                    If Not skip Then
+
+                        'Inserción del objeto entero
+                        Dim dato = New Datos(
                         dosisAdministradas,
                         dosisEntregadas,
                         dosisEntregadasModerna,
@@ -117,11 +125,16 @@ Public Class ControladorDatos
                         porcentajePoblacionAdministradas,
                         porcentajePoblacionCompletas,
                         fecha, comunidad)
-                    'dato.imprimir()
+                        'dato.imprimir()
 
 
-                    'inserto los datos en una lista
-                    listOfDatos.Add(dato)
+                        'inserto los datos en una lista
+                        listOfDatos.Add(dato)
+
+                    End If
+
+                    skip = False
+
                 Next
 
 

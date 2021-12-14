@@ -208,9 +208,10 @@ Public Class BBDD
 
     Public Sub insertarDatos(dato As Datos)
         Dim query As String = ""
+        'MessageBox.Show(Format(dato.fecha, "yyyy-MM-dd").ToString())
         Try
             query = "INSERT INTO datos (comunidad_id, dosisAdministradas, dosisEntregadas, dosisEntregadasModerna, dosisEntregadasPfizer, dosisEntregadasAstrazeneca, dosisPautaCompletada, porcentajeEntregadas, porcentajePoblacionAdministradas, porcentajePoblacionCompletas, fecha)
-                                    VALUES ('" & dato.comunidad.id & "', '" & dato.dosisAdministradas & "', '" & dato.dosisEntregadas & "', '" & dato.dosisEntregadasModerna & "', '" & dato.dosisEntregadasPfizer & "', '" & dato.dosisEntregadasAstrazeneca & "', '" & dato.dosisPautaCompletada & "', '" & dato.porcentajeEntregadas & "', '" & dato.porcentajePoblacionAdministradas & "', '" & dato.porcentajePoblacionCompletas & "', '" & Format(dato.fecha, "yyyy-MMd-d") & "'); "
+                                    VALUES ('" & dato.comunidad.id & "', '" & dato.dosisAdministradas & "', '" & dato.dosisEntregadas & "', '" & dato.dosisEntregadasModerna & "', '" & dato.dosisEntregadasPfizer & "', '" & dato.dosisEntregadasAstrazeneca & "', '" & dato.dosisPautaCompletada & "', '" & dato.porcentajeEntregadas * 100 & "', '" & dato.porcentajePoblacionAdministradas * 100 & "', '" & dato.porcentajePoblacionCompletas * 100 & "', '" & Format(dato.fecha, "yyyy-MM-dd").ToString() & "'); "
 
         Catch ex As Exception
             dato.imprimir()
