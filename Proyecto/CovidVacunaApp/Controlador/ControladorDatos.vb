@@ -17,6 +17,9 @@ Public Class ControladorDatos
 
         'Inicializar el bbdd manager
         Dim bbdd = New BBDD()
+        'Elimino todos los datos para volverlos a cargar
+        bbdd.eliminarTodosDatos()
+
         'Lista de comunidades
         Dim listaComunidades = New List(Of Comunidad)
         listaComunidades = bbdd.listarComunidades()

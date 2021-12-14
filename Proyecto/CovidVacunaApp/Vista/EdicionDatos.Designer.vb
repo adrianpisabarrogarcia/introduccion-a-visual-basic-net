@@ -22,6 +22,7 @@ Partial Class EdicionDatos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EdicionDatos))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.bSave = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -45,6 +46,7 @@ Partial Class EdicionDatos
         Me.nPorcentajePoblacionAdministradas = New System.Windows.Forms.NumericUpDown()
         Me.nPorcentajePoblacionCompletas = New System.Windows.Forms.NumericUpDown()
         Me.nPorcentajeEntregadas = New System.Windows.Forms.NumericUpDown()
+        Me.bEliminarRegistro = New System.Windows.Forms.Button()
         CType(Me.nDosisAdministradas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nDosisEntregadas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nDosisEntregadasModerna, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -246,11 +248,23 @@ Partial Class EdicionDatos
         Me.nPorcentajeEntregadas.Size = New System.Drawing.Size(203, 22)
         Me.nPorcentajeEntregadas.TabIndex = 22
         '
+        'bEliminarRegistro
+        '
+        Me.bEliminarRegistro.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bEliminarRegistro.ForeColor = System.Drawing.Color.Red
+        Me.bEliminarRegistro.Location = New System.Drawing.Point(800, 315)
+        Me.bEliminarRegistro.Name = "bEliminarRegistro"
+        Me.bEliminarRegistro.Size = New System.Drawing.Size(216, 69)
+        Me.bEliminarRegistro.TabIndex = 23
+        Me.bEliminarRegistro.Text = "🗑 Eliminar registro"
+        Me.bEliminarRegistro.UseVisualStyleBackColor = True
+        '
         'EdicionDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1112, 424)
+        Me.Controls.Add(Me.bEliminarRegistro)
         Me.Controls.Add(Me.nPorcentajeEntregadas)
         Me.Controls.Add(Me.nPorcentajePoblacionCompletas)
         Me.Controls.Add(Me.nPorcentajePoblacionAdministradas)
@@ -274,6 +288,7 @@ Partial Class EdicionDatos
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.bSave)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EdicionDatos"
         Me.Text = "EdicionDatos"
         CType(Me.nDosisAdministradas, System.ComponentModel.ISupportInitialize).EndInit()
@@ -313,4 +328,5 @@ Partial Class EdicionDatos
     Friend WithEvents nPorcentajePoblacionAdministradas As NumericUpDown
     Friend WithEvents nPorcentajePoblacionCompletas As NumericUpDown
     Friend WithEvents nPorcentajeEntregadas As NumericUpDown
+    Friend WithEvents bEliminarRegistro As Button
 End Class

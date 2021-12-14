@@ -218,20 +218,76 @@ Public Class BBDD
         End Try
 
 
+        conectar()
+
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            cmd.ExecuteNonQuery()
+            'para devolver datos:
+            'MySqlDataReader rdr = cmd.ExecuteReader();
+            'MessageBox.Show("Usuario registrado")
+        Catch ex As Exception
+            MessageBox.Show("Error insertando un dato")
+        End Try
 
 
+        desconectar()
+    End Sub
+
+
+    Public Sub eliminarDato(id As Integer)
+        Dim query As String = " DELETE FROM datos WHERE id = " & id & ";"
 
         conectar()
 
-        'Try
-        Dim cmd = New MySqlCommand(query, conexion)
-        cmd.ExecuteNonQuery()
-        'para devolver datos:
-        'MySqlDataReader rdr = cmd.ExecuteReader();
-        'MessageBox.Show("Usuario registrado")
-        'Catch ex As Exception
-        '    MessageBox.Show("Error insertando un dato" & ex.ToString())
-        'End Try
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            cmd.ExecuteNonQuery()
+            'para devolver datos:
+            'MySqlDataReader rdr = cmd.ExecuteReader();
+            'MessageBox.Show("Usuario registrado")
+        Catch ex As Exception
+            MessageBox.Show("Error eliminarndo un dato")
+        End Try
+
+        desconectar()
+    End Sub
+
+    Public Sub modificarDato(dato As Datos)
+        Dim query As String = "UPDATE dato
+                                SET column1 = value1, column2 = value2, ...
+                                WHERE id = " & dato.id & "; "
+
+        conectar()
+
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            cmd.ExecuteNonQuery()
+            'para devolver datos:
+            'MySqlDataReader rdr = cmd.ExecuteReader();
+            'MessageBox.Show("Usuario registrado")
+        Catch ex As Exception
+            MessageBox.Show("Error eliminarndo un dato")
+        End Try
+
+        desconectar()
+    End Sub
+
+    'truncate datos
+    Public Sub eliminarTodosDatos()
+        Dim query As String = "TRUNCATE TABLE datos;"
+
+        conectar()
+
+        Try
+            Dim cmd = New MySqlCommand(query, conexion)
+            cmd.ExecuteNonQuery()
+            'para devolver datos:
+            'MySqlDataReader rdr = cmd.ExecuteReader();
+            'MessageBox.Show("Usuario registrado")
+        Catch ex As Exception
+            MessageBox.Show("Error eliminarndo todos los datos")
+        End Try
 
         desconectar()
     End Sub
